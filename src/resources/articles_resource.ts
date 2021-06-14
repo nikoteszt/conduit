@@ -7,6 +7,7 @@ import {
 } from "../models/article_model.ts";
 import { ArticlesFavoritesModel } from "../models/articles_favorites_model.ts";
 import UserModel from "../models/user_model.ts";
+import UserFavoritesModel from "../models/user_favorites_model.ts";
 
 class ArticlesResource extends BaseResource {
   static paths = [
@@ -98,17 +99,13 @@ class ArticlesResource extends BaseResource {
     console.log("addFavoritedToEntities");
     const currentUser = await this.getCurrentUser();
     if (!currentUser) {
-      console.log(0)
       return entities;
     }
-    console.log(1)
     const favs: ArticlesFavoritesModel[] = await ArticlesFavoritesModel
       .whereIn("article_id", articleIds);
-    console.log(2)
+    
     entities = entities.map((entity: ArticleEntity) => {
-      console.log(3)
       favs.forEach((favorite: ArticlesFavoritesModel) => {
-        
         if (entity.id === favorite.article_id) {
           if (currentUser.id === favorite.user_id) {
             entity.favorited = favorite.value;
@@ -139,7 +136,6 @@ class ArticlesResource extends BaseResource {
 
     entities.map((entity: ArticleEntity) => {
       favs.forEach((favorite: ArticlesFavoritesModel) => {
-        console.log("favorite", favorite)
         if (favorite.article_id == entity.id) {
           if (favorite.value === true) {
             entity.favoritesCount += 1;
@@ -344,6 +340,42 @@ class ArticlesResource extends BaseResource {
     return this.response;
   }
 
+
+  protected async getArticlesCount(): Promise<number> {
+    return new Promise<number>(async (resolve) => {
+      const articles: ArticleModel[] = await ArticleModel
+        .all(await this.getQueryFilters(false));
+      const articleIds: number[] = [];
+      const authorIds: number[] = [];
+      
+      let entities: ArticleEntity[] = articles.map((article: ArticleModel) => {
+        if (authorIds.indexOf(article.author_id) === -1) {
+          authorIds.push(article.author_id);
+        }
+        if (articleIds.indexOf(article.id) === -1) {
+          articleIds.push(article.id);
+        }
+  
+        return article.toEntity();
+      });
+      // const favoritedAuthorIds: number[] = [];
+    
+      // const userFavorites: UserFavoritesModel[] = await UserFavoritesModel
+      //   .all(await this.getQueryFilters())
+    
+      entities = await this.addAuthorsToEntities(authorIds, entities);
+    
+      entities = await this.addFavoritesCountToEntities(articleIds, entities);
+    
+      entities = await this.addFavoritedToEntities(articleIds, entities);
+    
+      entities = await this.filterEntitiesByFavoritedBy(articleIds, entities);
+    
+      resolve(entities.length);
+    });
+  }
+
+
   /**
    * @description
    *     Get all articles--filtered or unfiltered.
@@ -359,10 +391,19 @@ class ArticlesResource extends BaseResource {
    * @return Promise<Drash.Http.Response>
    */
   protected async getArticles(): Promise<Drash.Http.Response> {
+    const currentUser = await this.getCurrentUser();
+    if (!currentUser) {
+      return this.errorResponse(
+        400,
+        "`user_id` field is required.",
+      );
+    }
+    console.log("getArticles", "filters", await this.getQueryFilters(true))
     const articles: ArticleModel[] = await ArticleModel
-      .all(await this.getQueryFilters());
+      .all(await this.getQueryFilters(true));
     const articleIds: number[] = [];
     const authorIds: number[] = [];
+    
     let entities: ArticleEntity[] = articles.map((article: ArticleModel) => {
       if (authorIds.indexOf(article.author_id) === -1) {
         authorIds.push(article.author_id);
@@ -375,20 +416,66 @@ class ArticlesResource extends BaseResource {
     });
 
 
+    const favoritedAuthorIds: number[] = [];
+
+    const userFavorites: UserFavoritesModel[] = await UserFavoritesModel
+    .all(currentUser.id)
+    console.log("userFavorites", userFavorites)
+
+    userFavorites.forEach(element => {
+      favoritedAuthorIds.push(element.favorited_user_id)
+    });
+
+    console.log("favoritedAuthorIds", favoritedAuthorIds)
     entities = await this.addAuthorsToEntities(authorIds, entities);
 
     entities = await this.addFavoritesCountToEntities(articleIds, entities);
 
-    //entities = await this.addFavoritedToEntities(articleIds, entities);
+    entities = await this.addFavoritedToEntities(articleIds, entities);
 
     entities = await this.filterEntitiesByFavoritedBy(articleIds, entities);
+    
+    // entities = await this.filterEntitiesByFavoritedAuthors(favoritedAuthorIds, entities);
+    
+    let count = await this.getArticlesCount();
 
     this.response.body = {
       articles: entities,
+      articles_count: count
     };
 
     return this.response;
   }
+
+  /**
+   * @description
+   *     Filter the entities by the favorited_by param.
+   *
+   * @param number[] articleIds
+   * @param ArticleEntity[] entities
+   *
+   * @return Promise<ArticleEntity[]>
+   */
+   protected async filterEntitiesByFavoritedAuthors(
+    favoritedAuthorIds: number[],
+    entities: ArticleEntity[],
+  ): Promise<ArticleEntity[]> {
+    console.log(entities)
+    const filtered: ArticleEntity[] = [];
+    entities.forEach((entity: ArticleEntity) => {
+      console.log(entity)
+      favoritedAuthorIds.forEach((favorite: number) => {
+        console.log(favorite)
+        if (entity.author_id === favorite) {
+            console.log("pushed", entity)
+            filtered.push(entity);
+        }
+      });
+    });
+
+    return filtered;
+  }
+
 
   /**
    * @description
@@ -405,15 +492,19 @@ class ArticlesResource extends BaseResource {
   ): Promise<ArticleEntity[]> {
     const favs: ArticlesFavoritesModel[] = await ArticlesFavoritesModel
       .whereIn("article_id", articleIds);
+    
+
 
     const username = this.request.getUrlQueryParam("favorited_by");
     if (!username) {
+
       return entities;
     }
 
     const results = await UserModel.where({ username: username });
 
     if (results.length <= 0) {
+
       return entities;
     }
 
@@ -423,9 +514,13 @@ class ArticlesResource extends BaseResource {
 
     entities.forEach((entity: ArticleEntity) => {
       favs.forEach((favorite: ArticlesFavoritesModel) => {
+
         if (entity.id === favorite.article_id) {
+
           if (user.id === favorite.user_id) {
+
             if (favorite.value === true) {
+
               entity.favorited = true;
               filtered.push(entity);
             }
@@ -443,11 +538,12 @@ class ArticlesResource extends BaseResource {
    *
    * @return Promise<ArticleFilters>
    */
-  protected async getQueryFilters(): Promise<ArticleFilters> {
+  protected async getQueryFilters(withOffset: boolean = false): Promise<ArticleFilters> {
 
     const author = this.request.getUrlQueryParam("author");
     const tag = this.request.getUrlQueryParam("tag");
-    //const offset = this.request.getUrlQueryParam("offset");
+    const offset = this.request.getUrlQueryParam("offset");
+
 
     const filters: ArticleFilters = {};
 
@@ -461,7 +557,10 @@ class ArticlesResource extends BaseResource {
     if (tag) {
         filters.tag = tag
     }
-    console.log("filters: " + filters);
+
+    if (offset && withOffset) {
+        filters.offset = Number(offset)
+    }
     return filters;
   }
 
