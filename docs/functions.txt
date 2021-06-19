@@ -1,1 +1,13 @@
-proba
+cookie polici: cookies használatba való beleegyezés, elutasítás
+bejelentkezés: az alkalmazásba be lehet jelentkezni, felhasználónév és jelszó szükséges hozzá
+regisztráció: az alkalmazásba be lehet regisztrálni, felhasználónév, emailcím és jelszó megadásával
+kezdőlapra ugrás: a Home feliratra klikkelés a kezdő oldalra visz
+bejelentkezés validáció: nem regisztrált email címmel és jelszóval nem lehet belépni.
+felhasználó bejegyzései: bejelentkezett felhasználó saját bejegyzései kilistázhatók a saját oldalán
+bejegyzés létrehozása: bejelentkezett felhasználó új bejegyzést hozhat létre
+lapozás: a kilistázott bejegyzések több oldalasak is lehetnek, lapozhatunk az oldalakon
+felhasználói beállítások: profilkép, felhasz.név, biográfia, email cím, jelszó, módosítható
+kezdőoldal bejelentkezve: bejelentkezett felhasználó kezdőoldalon is listázhatja a saját ill. az összes bejegyzést
+kijelentkezés: a felhasználó ki tud jelentkezni az oldalról
+popular tag választó: lehet taget választani, ilyenkor csak a taget tartalmazó bejegyzések jelennek meg
+
