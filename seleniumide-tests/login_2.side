@@ -1,0 +1,113 @@
+{
+  "id": "4c819bc7-a410-4faf-a81f-7588495ee131",
+  "version": "2.0",
+  "name": "Conduit_login",
+  "url": "http://localhost:1667",
+  "tests": [{
+    "id": "ea474ecb-7b8f-456f-908b-7332d610a8bd",
+    "name": "Login",
+    "commands": [{
+      "id": "2461daf8-8beb-4d5a-a46b-643c53161441",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4da9c8a9-117d-4411-bd11-60a00582c3ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "918x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e0fc247-7a6f-4e2d-abd6-125d0de84eb8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='app']/nav/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4bd2d40-b42a-486a-90f6-e450bd3fc55b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f705550-a720-461f-8217-f471bf1486ff",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ntest2@ceg.hu"
+    }, {
+      "id": "6cabc143-26a8-412c-9295-fbd1c487b81b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset[2]/input", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/input", "xpath:position"]
+      ],
+      "value": "ntest222A"
+    }, {
+      "id": "22036b3d-b9ce-4593-836c-d1223c12f524",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Sign in')]",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05960679-6ef7-42f5-80e4-10a2ef4a984d",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ntest2",
+      "targets": [
+        ["linkText=ntest2", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'ntest2')]", "xpath:link"],
+        ["xpath=//div[@id='app']/nav/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/@ntest2/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ntest2')]", "xpath:innerText"]
+      ],
+      "value": "ntest2"
+    }]
+  }],
+  "suites": [{
+    "id": "faf5535b-8ef8-45cb-8ce7-467f04308019",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea474ecb-7b8f-456f-908b-7332d610a8bd"]
+  }],
+  "urls": ["http://localhost:1667/"],
+  "plugins": []
+}
