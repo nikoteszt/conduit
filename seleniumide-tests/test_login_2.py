@@ -15,11 +15,11 @@ chrome_options.add_argument("--headless")
 
 
 class TestLogin():
-    def setup_method(self, method):
+    def setup_method(self):
         self.driver = webdriver.Chrome(options=chrome_options)
         self.vars = {}
     
-    def teardown_method(self, method):
+    def teardown_method(self):
         self.driver.quit()
     
     def test_login(self):
@@ -30,6 +30,7 @@ class TestLogin():
         self.driver.find_element(By.XPATH, "//input[@type=\'text\']").send_keys("ntest2@ceg.hu")
         self.driver.find_element(By.XPATH, "//input[@type=\'password\']").send_keys("ntest222A")
         self.driver.find_element(By.XPATH, "//button[contains(.,\'Sign in\')]").click()
+        time.sleep(2000)
         assert self.driver.find_element(By.LINK_TEXT, "ntest2").text == "ntest2"
         time.sleep(2000)
         self.driver.find_element(By.LINK_TEXT, "Log out").click()
