@@ -1,0 +1,100 @@
+{
+  "uid" : "f8b5dba789c2535",
+  "name" : "test_add_zero",
+  "fullName" : "testproject.test_mymath#test_add_zero",
+  "historyId" : "77caee529814bb5616db6b28df37c87c",
+  "time" : {
+    "start" : 1626984702450,
+    "stop" : 1626984702450,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_mymath"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-450"
+  }, {
+    "name" : "thread",
+    "value" : "3278-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_mymath"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "cf4a143d1a7a76f6",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/5//#testresult/cf4a143d1a7a76f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1625878413963,
+          "stop" : 1625878413963,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "17b2aa5491cd2e60",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/4//#testresult/17b2aa5491cd2e60",
+        "status" : "passed",
+        "time" : {
+          "start" : 1625878347481,
+          "stop" : 1625878347481,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "82ec236a9cbcb833",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/3//#testresult/82ec236a9cbcb833",
+        "status" : "passed",
+        "time" : {
+          "start" : 1625667897227,
+          "stop" : 1625667897227,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "28220c5f930097f8",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/2//#testresult/28220c5f930097f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1625429141723,
+          "stop" : 1625429141723,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f8b5dba789c2535.json",
+  "parameterValues" : [ ]
+}
