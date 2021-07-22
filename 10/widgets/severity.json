@@ -1,0 +1,11 @@
+[ {
+  "uid" : "b1128def472b606a",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1626993465935,
+    "stop" : 1626993466574,
+    "duration" : 639
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
