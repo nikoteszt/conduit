@@ -98,6 +98,27 @@
         ["xpath=//a[contains(.,'ntest2')]", "xpath:innerText"]
       ],
       "value": "ntest2"
+    }, {
+      "id": "fca12626-68ca-4f36-bb8e-4588646df31a",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dee15219-fc9a-4327-baf4-cbbd05aa3f08",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//div[@id='app']/nav/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
     }]
   }],
   "suites": [{
