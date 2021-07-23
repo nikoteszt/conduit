@@ -15,11 +15,11 @@ chrome_options.add_argument("--headless")
 
 
 class TestLogin():
-    def setup_method(self):
+    def setup_method(self, method):
         self.driver = webdriver.Chrome(options=chrome_options)
         self.vars = {}
     
-    def teardown_method(self):
+    def teardown_method(self, method):
         self.driver.quit()
     
     def test_login(self):
