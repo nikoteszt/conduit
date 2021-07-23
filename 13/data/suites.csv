@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jul 23 16:01:44 GMT 2021","Fri Jul 23 17:08:25 GMT 2021","4000975","seleniumide-tests","test_login_2","TestLogin","","","test_login",""
