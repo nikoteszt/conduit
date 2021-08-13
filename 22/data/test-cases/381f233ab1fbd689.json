@@ -1,0 +1,132 @@
+{
+  "uid" : "381f233ab1fbd689",
+  "name" : "test_listing_data",
+  "fullName" : "testproject.test_listing_data.TestListingData#test_listing_data",
+  "historyId" : "461080a8371f312108a7d39cab83ce58",
+  "time" : {
+    "start" : 1628888499782,
+    "stop" : 1628888499917,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestListingData",
+    "time" : {
+      "start" : 1628888491993,
+      "stop" : 1628888499722,
+      "duration" : 7729
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1385d7de294f7fda",
+      "name" : "stdout",
+      "source" : "1385d7de294f7fda.txt",
+      "type" : "text/plain",
+      "size" : 42
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestListingData::0",
+    "time" : {
+      "start" : 1628888499918,
+      "stop" : 1628888502201,
+      "duration" : 2283
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_listing_data"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestListingData"
+  }, {
+    "name" : "host",
+    "value" : "fv-az72-270"
+  }, {
+    "name" : "thread",
+    "value" : "4020-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_listing_data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "454e1157273cd031",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/21//#testresult/454e1157273cd031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628886937379,
+          "stop" : 1628886937507,
+          "duration" : 128
+        }
+      }, {
+        "uid" : "3c0dec0907386768",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/20//#testresult/3c0dec0907386768",
+        "status" : "broken",
+        "statusDetails" : "NameError: name 'By' is not defined",
+        "time" : {
+          "start" : 1628885983852,
+          "stop" : 1628885983953,
+          "duration" : 101
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "381f233ab1fbd689.json",
+  "parameterValues" : [ ]
+}
