@@ -1,0 +1,86 @@
+{
+  "uid" : "ba8414b41e2cbd95",
+  "name" : "test_edit_post",
+  "fullName" : "testproject.test_post.TestPostSuite#test_edit_post",
+  "historyId" : "b1f7fe67f4536375c1051f1a75ad0bab",
+  "time" : {
+    "start" : 1628855210431,
+    "stop" : 1628855223907,
+    "duration" : 13476
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite",
+    "time" : {
+      "start" : 1628855202729,
+      "stop" : 1628855210429,
+      "duration" : 7700
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite::0",
+    "time" : {
+      "start" : 1628855223908,
+      "stop" : 1628855226107,
+      "duration" : 2199
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_post"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPostSuite"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-699"
+  }, {
+    "name" : "thread",
+    "value" : "3879-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_post"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ba8414b41e2cbd95.json",
+  "parameterValues" : [ ]
+}
