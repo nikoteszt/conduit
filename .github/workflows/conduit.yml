@@ -59,7 +59,7 @@ jobs:
         run: sleep 30s
         shell: bash
 
-      - name: Run Tests1
+      - name: Preconfig testdata
         run: |
           selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" seleniumide-tests/registration.side
           
