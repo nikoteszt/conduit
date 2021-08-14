@@ -1,0 +1,102 @@
+{
+  "uid" : "d2b63b128ee61c87",
+  "name" : "test_listing_data",
+  "fullName" : "testproject.test_listing_data.TestListingData#test_listing_data",
+  "historyId" : "461080a8371f312108a7d39cab83ce58",
+  "time" : {
+    "start" : 1628936437566,
+    "stop" : 1628936437679,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestListingData",
+    "time" : {
+      "start" : 1628936429673,
+      "stop" : 1628936437554,
+      "duration" : 7881
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f8f45304ea09f191",
+      "name" : "stdout",
+      "source" : "f8f45304ea09f191.txt",
+      "type" : "text/plain",
+      "size" : 42
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestListingData::0",
+    "time" : {
+      "start" : 1628936437680,
+      "stop" : 1628936440044,
+      "duration" : 2364
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_listing_data"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestListingData"
+  }, {
+    "name" : "host",
+    "value" : "fv-az72-270"
+  }, {
+    "name" : "thread",
+    "value" : "3814-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_listing_data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d2b63b128ee61c87.json",
+  "parameterValues" : [ ]
+}
