@@ -40,9 +40,9 @@ jobs:
         run: |
           docker-compose up -d 
       
-      - name: Install Selenium Side Runner
-        run: |
-          npm install -g selenium-side-runner
+#      - name: Install Selenium Side Runner
+#        run: |
+#          npm install -g selenium-side-runner
 
       - name: Install Chrome
         run: |
@@ -59,16 +59,19 @@ jobs:
         run: sleep 30s
         shell: bash
 
-      - name: Preconfig testdata
-        run: |
-          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" seleniumide-tests/registration.side
-          
+#      - name: Preconfig testdata (selenium-side-runner -el)
+#        run: |
+#          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" seleniumide-tests/registration.side
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install flake8 pytest
           if [ -f testproject/requirements.txt ]; then pip install -r testproject/requirements.txt; fi
+          
+      - name: Preconfig testdata
+        run: |
+          pytest testproject/preconfig/registration.py
 
       - name: Test with pytest
         run: |
