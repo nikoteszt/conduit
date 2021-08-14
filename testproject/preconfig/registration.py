@@ -22,9 +22,9 @@ class TestRegistration(object):
         self.driver.find_element_by_xpath('//input[@type="password"]').send_keys("ntest222A")
         self.driver.find_element(By.XPATH, "//button[contains(.,\'Sign up\')]").click()
         time.sleep(2)
-        reg = self.driver.find_element_by_xpath('//div[text()="Your registration was successful!"]')
+        reg = self.driver.find_elements_by_xpath('//div[text()="Your registration was successful!"]')
         assert len(reg) > 0
         self.driver.find_element(By.XPATH, "//button[contains(.,\'OK\')]").click()
-        elements = self.driver.find_element_by_link_text("ntest2")
+        elements = self.driver.find_elements_by_link_text("ntest2")
         assert len(elements) > 0
         self.driver.find_element_by_link_text("Log out").click()
