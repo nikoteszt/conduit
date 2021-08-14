@@ -1,0 +1,132 @@
+{
+  "uid" : "bc0f6a16f0c03b01",
+  "name" : "test_multiple_pages",
+  "fullName" : "testproject.test_multiple_pages.TestMultiplePages#test_multiple_pages",
+  "historyId" : "624c9add8cd934d52df281e345f2d5d2",
+  "time" : {
+    "start" : 1628962976968,
+    "stop" : 1628962984229,
+    "duration" : 7261
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestMultiplePages",
+    "time" : {
+      "start" : 1628962968988,
+      "stop" : 1628962976966,
+      "duration" : 7978
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "25527a4eb3bb7896",
+      "name" : "stdout",
+      "source" : "25527a4eb3bb7896.txt",
+      "type" : "text/plain",
+      "size" : 87
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestMultiplePages::0",
+    "time" : {
+      "start" : 1628962984230,
+      "stop" : 1628962986475,
+      "duration" : 2245
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_multiple_pages"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMultiplePages"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-229"
+  }, {
+    "name" : "thread",
+    "value" : "4081-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_multiple_pages"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "a66861fb0243a57a",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/34//#testresult/a66861fb0243a57a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628961150629,
+          "stop" : 1628961157824,
+          "duration" : 7195
+        }
+      }, {
+        "uid" : "8bb7738dde181278",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/33//#testresult/8bb7738dde181278",
+        "status" : "broken",
+        "statusDetails" : "IndexError: list index out of range",
+        "time" : {
+          "start" : 1628959954049,
+          "stop" : 1628959958214,
+          "duration" : 4165
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bc0f6a16f0c03b01.json",
+  "parameterValues" : [ ]
+}
