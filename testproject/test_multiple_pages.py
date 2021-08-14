@@ -34,7 +34,7 @@ class TestMultiplePages(object):
             feed_pages_article = self.driver.find_elements_by_class_name("article-preview")
             assert len(feed_pages_article) > 0
             print(f"Az {i+1}.oldalon levő bejegyzések száma: ", len(feed_pages_article))
-            fpa.append(feed_pages_article[i].find_element_by_xpath('//a/h1').text)
+            fpa.append(feed_pages_article[0].find_element_by_xpath('//a/h1').text)
             if i > 0:
                 assert fpa[i] != fpa[i-1]
             if i < len(page_link)-1:
