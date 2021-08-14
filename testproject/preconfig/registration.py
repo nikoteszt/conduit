@@ -15,6 +15,7 @@ class TestRegistration(object):
 
     def test_registration(self):
         self.driver.get("http://localhost:1667/")
+        time.sleep(2)
         self.driver.find_element_by_link_text("Sign up").click()
         self.driver.find_element_by_xpath('//input[@type="text"]').send_keys("ntest2")
         self.driver.find_element_by_xpath('(//input[@type="text"])[2]').send_keys("ntest2@ceg.hu")
