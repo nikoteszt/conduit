@@ -55,8 +55,8 @@ jobs:
         run: |
           seleniumbase install chromedriver
 
-      - name: Sleep for 30 seconds
-        run: sleep 30s
+      - name: Sleep for 45 seconds
+        run: sleep 45s
         shell: bash
 
 #      - name: Preconfig testdata (selenium-side-runner -el)
