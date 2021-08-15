@@ -28,8 +28,11 @@ class TestUploadData(object):
         self.driver.quit()
 
     def test_upload_data(self):
-        g_feed = self.driver.find_elements_by_class_name("article-preview")
-        feed_upload = 0
+        # Elmentjük a meglévő feedek számát
+        g_feed = len(self.driver.find_elements_by_class_name("article-preview"))
+
+        feed_upload = 0  # ez fogja számolni, hány feed-et töltünk fel
+        # Feed feltöltés fileból
         with open('testproject/upload_data.csv', encoding="utf-8") as ud_file:
             csv_reader = csv.reader(ud_file, delimiter=',')
             next(csv_reader)
@@ -46,5 +49,8 @@ class TestUploadData(object):
         ud_file.close()
         self.driver.find_element_by_link_text("Home").click()
         time.sleep(3)
-        g_feed_after_upload = self.driver.find_elements_by_class_name("article-preview")
-        assert len(g_feed_after_upload) == len(g_feed) + feed_upload
+
+        # Elmentjük a feedek számát a feltöltés után is
+        g_feed_after_upload = len(self.driver.find_elements_by_class_name("article-preview"))
+        # Ellenőrizzük, hogy a feedek összáma, a feltöltött feedek számával nőt e.
+        assert g_feed_after_upload == g_feed + feed_upload
