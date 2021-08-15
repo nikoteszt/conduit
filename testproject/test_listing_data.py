@@ -25,7 +25,7 @@ class TestListingData(object):
         self.driver.close()
         self.driver.quit()
 
-    def test_listing_data(self):
+    def test_tc05_listing_data(self):
         self.driver.find_element_by_link_text("Your Feed").click()
         your_feed = self.driver.find_elements_by_class_name("author")
         assert len(your_feed) > 0
