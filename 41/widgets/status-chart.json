@@ -1,0 +1,111 @@
+[ {
+  "uid" : "618976cb644fbbc6",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1629046372895,
+    "stop" : 1629046377462,
+    "duration" : 4567
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58cdfac685daca20",
+  "name" : "test_edit_post",
+  "time" : {
+    "start" : 1629046427533,
+    "stop" : 1629046440966,
+    "duration" : 13433
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "506fe0efae20ea82",
+  "name" : "test_save_data",
+  "time" : {
+    "start" : 1629046466548,
+    "stop" : 1629046468900,
+    "duration" : 2352
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5660316ecb1a949",
+  "name" : "test_listing_data",
+  "time" : {
+    "start" : 1629046369377,
+    "stop" : 1629046369468,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28c696aac1459e1a",
+  "name" : "test_new_post",
+  "time" : {
+    "start" : 1629046409062,
+    "stop" : 1629046421656,
+    "duration" : 12594
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a602d1b26781bdc",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1629046385166,
+    "stop" : 1629046388311,
+    "duration" : 3145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6839ac16eee7705c",
+  "name" : "test_multiple_pages",
+  "time" : {
+    "start" : 1629046396050,
+    "stop" : 1629046403213,
+    "duration" : 7163
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d328f62bbc1049d4",
+  "name" : "test_del_post",
+  "time" : {
+    "start" : 1629046446731,
+    "stop" : 1629046452845,
+    "duration" : 6114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99daa53e9527ae50",
+  "name" : "test_registration",
+  "time" : {
+    "start" : 1629046456122,
+    "stop" : 1629046458812,
+    "duration" : 2690
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "754793d696aaa2ad",
+  "name" : "test_upload_data",
+  "time" : {
+    "start" : 1629046478930,
+    "stop" : 1629046478939,
+    "duration" : 9
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5dcfba97e3122838",
+  "name" : "test_cookies_accept",
+  "time" : {
+    "start" : 1629046348888,
+    "stop" : 1629046361612,
+    "duration" : 12724
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
