@@ -26,7 +26,7 @@ class TestMultiplePages(object):
         self.driver.close()
         self.driver.quit()
 
-    def test_multiple_pages(self):
+    def test_tc06_multiple_pages(self):
         self.driver.find_element_by_link_text("Your Feed").click()
         time.sleep(1)
         page_link = self.driver.find_elements_by_class_name("page-link")
