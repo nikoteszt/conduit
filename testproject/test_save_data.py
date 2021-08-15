@@ -36,7 +36,7 @@ class TestSaveData(object):
         for i in range(len(articles)):
             print('Cím: ', articles[i].find_element_by_tag_name("h1").text, file=save_data)
             print('leírás: ', articles[i].find_element_by_tag_name("p").text, file=save_data)
-            tags = articles[i].find_elements_by_xpath('//div[@class="tag-list"]/a')
+            tags = articles[i].find_elements_by_xpath('.//div[@class="tag-list"]/a')
             tag = ""
             for j in range(len(tags)):
                 tag = tag + tags[j].text + ", "
