@@ -1,0 +1,151 @@
+{
+  "uid" : "173ef59e8c0aa7c7",
+  "name" : "test_save_data",
+  "fullName" : "testproject.test_save_data.TestSaveData#test_save_data",
+  "historyId" : "068647abb3b66781fa7e0bc9c9ae9481",
+  "time" : {
+    "start" : 1629049889534,
+    "stop" : 1629049892033,
+    "duration" : 2499
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestSaveData",
+    "time" : {
+      "start" : 1629049881690,
+      "stop" : 1629049889533,
+      "duration" : 7843
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestSaveData::0",
+    "time" : {
+      "start" : 1629049892034,
+      "stop" : 1629049892338,
+      "duration" : 304
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_save_data"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSaveData"
+  }, {
+    "name" : "host",
+    "value" : "fv-az47-628"
+  }, {
+    "name" : "thread",
+    "value" : "3800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_save_data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "a48c4226ee5974bc",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/43//#testresult/a48c4226ee5974bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629047563351,
+          "stop" : 1629047566122,
+          "duration" : 2771
+        }
+      }, {
+        "uid" : "2ad78e0b0d3e2086",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/42//#testresult/2ad78e0b0d3e2086",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629047146505,
+          "stop" : 1629047148958,
+          "duration" : 2453
+        }
+      }, {
+        "uid" : "506fe0efae20ea82",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/41//#testresult/506fe0efae20ea82",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629046466548,
+          "stop" : 1629046468900,
+          "duration" : 2352
+        }
+      }, {
+        "uid" : "cea3d5ea70b5484",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/40//#testresult/cea3d5ea70b5484",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629038026698,
+          "stop" : 1629038029210,
+          "duration" : 2512
+        }
+      }, {
+        "uid" : "f4a4e01bd76ee3c",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/39//#testresult/f4a4e01bd76ee3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628989570889,
+          "stop" : 1628989573348,
+          "duration" : 2459
+        }
+      }, {
+        "uid" : "56ddc5ef9851287",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/38//#testresult/56ddc5ef9851287",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628978687604,
+          "stop" : 1628978690408,
+          "duration" : 2804
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "173ef59e8c0aa7c7.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,133 @@
+{
+  "uid" : "eb4a25a1c0904554",
+  "name" : "test_cookies_accept",
+  "fullName" : "testproject.test_cookies.TestCookies#test_cookies_accept",
+  "historyId" : "fc8288dfbb9806f2889c650b3b14a09e",
+  "time" : {
+    "start" : 1629049769362,
+    "stop" : 1629049782363,
+    "duration" : 13001
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestCookies",
+    "time" : {
+      "start" : 1629049765879,
+      "stop" : 1629049769358,
+      "duration" : 3479
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestCookies::0",
+    "time" : {
+      "start" : 1629049782364,
+      "stop" : 1629049782419,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_cookies"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCookies"
+  }, {
+    "name" : "host",
+    "value" : "fv-az47-628"
+  }, {
+    "name" : "thread",
+    "value" : "3800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_cookies"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "42943456bbd5779b",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/43//#testresult/42943456bbd5779b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629047445503,
+          "stop" : 1629047458149,
+          "duration" : 12646
+        }
+      }, {
+        "uid" : "c729cdb4300bdb7b",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/42//#testresult/c729cdb4300bdb7b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629047028127,
+          "stop" : 1629047041086,
+          "duration" : 12959
+        }
+      }, {
+        "uid" : "5dcfba97e3122838",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/41//#testresult/5dcfba97e3122838",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629046348888,
+          "stop" : 1629046361612,
+          "duration" : 12724
+        }
+      }, {
+        "uid" : "c90120d433570cad",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/40//#testresult/c90120d433570cad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629037906447,
+          "stop" : 1629037919459,
+          "duration" : 13012
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "eb4a25a1c0904554.json",
+  "parameterValues" : [ ]
+}
