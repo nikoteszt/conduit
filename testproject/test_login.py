@@ -14,7 +14,7 @@ class TestDefaultSuite(object):
         self.driver.close()
         self.driver.quit()
 
-    def test_login(self):
+    def test_tc02_login(self):
         self.driver.get("http://localhost:1667/")
         self.driver.find_element_by_link_text("Sign in").click()
         self.driver.find_element_by_xpath('//input[@placeholder="Email"]').send_keys("ntest2@ceg.hu")
