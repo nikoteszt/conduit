@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 chrome_options = Options()
 chrome_options.headless = True
+# TC01
 
 
 class TestRegistration(object):
