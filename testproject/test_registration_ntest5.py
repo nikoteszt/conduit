@@ -14,7 +14,7 @@ class TestRegistration(object):
     def teardown_method(self):
         self.driver.quit()
 
-    def test_registration(self):
+    def test_tc01_registration(self):
         self.driver.get("http://localhost:1667/")
         self.driver.find_element_by_link_text("Sign up").click()
         self.driver.find_element_by_xpath('//input[@type="text"]').send_keys("ntest5")
