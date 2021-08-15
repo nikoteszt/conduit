@@ -21,7 +21,7 @@ class TestLogout(object):
         self.driver.close()
         self.driver.quit()
 
-    def test_logout(self):
+    def test_tc03_logout(self):
         len_ntest2_link = len(self.driver.find_elements_by_link_text('ntest2'))
         print(len_ntest2_link)
         assert len_ntest2_link > 0
