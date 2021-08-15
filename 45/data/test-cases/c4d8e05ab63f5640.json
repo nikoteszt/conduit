@@ -1,0 +1,86 @@
+{
+  "uid" : "c4d8e05ab63f5640",
+  "name" : "test_tc07_new_post",
+  "fullName" : "testproject.test_post.TestPostSuite#test_tc07_new_post",
+  "historyId" : "4e44a7836d3af61bfe72b9de112d113b",
+  "time" : {
+    "start" : 1629070886392,
+    "stop" : 1629070899172,
+    "duration" : 12780
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite",
+    "time" : {
+      "start" : 1629070882671,
+      "stop" : 1629070886390,
+      "duration" : 3719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite::0",
+    "time" : {
+      "start" : 1629070899174,
+      "stop" : 1629070901432,
+      "duration" : 2258
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_post"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPostSuite"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-548"
+  }, {
+    "name" : "thread",
+    "value" : "3962-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_post"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4d8e05ab63f5640.json",
+  "parameterValues" : [ ]
+}

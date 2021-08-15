@@ -1,0 +1,86 @@
+{
+  "uid" : "a91ade865f9e055b",
+  "name" : "test_tc11_upload_data",
+  "fullName" : "testproject.test_upload_data.TestUploadData#test_tc11_upload_data",
+  "historyId" : "d271ec177ab39fc9ce90d3c8d3248309",
+  "time" : {
+    "start" : 1629070958007,
+    "stop" : 1629070986914,
+    "duration" : 28907
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestUploadData",
+    "time" : {
+      "start" : 1629070948199,
+      "stop" : 1629070958006,
+      "duration" : 9807
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestUploadData::0",
+    "time" : {
+      "start" : 1629070986915,
+      "stop" : 1629070989096,
+      "duration" : 2181
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_upload_data"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUploadData"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-548"
+  }, {
+    "name" : "thread",
+    "value" : "3962-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_upload_data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a91ade865f9e055b.json",
+  "parameterValues" : [ ]
+}

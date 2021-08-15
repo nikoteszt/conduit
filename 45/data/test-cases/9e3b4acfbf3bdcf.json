@@ -1,0 +1,102 @@
+{
+  "uid" : "9e3b4acfbf3bdcf",
+  "name" : "test_tc03_logout",
+  "fullName" : "testproject.test_logout.TestLogout#test_tc03_logout",
+  "historyId" : "bc17719f34e550a7dab5812e83191369",
+  "time" : {
+    "start" : 1629070862128,
+    "stop" : 1629070865314,
+    "duration" : 3186
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestLogout",
+    "time" : {
+      "start" : 1629070854327,
+      "stop" : 1629070862126,
+      "duration" : 7799
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "136dccb26dba8299",
+      "name" : "stdout",
+      "source" : "136dccb26dba8299.txt",
+      "type" : "text/plain",
+      "size" : 2
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestLogout::0",
+    "time" : {
+      "start" : 1629070865314,
+      "stop" : 1629070865381,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_logout"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogout"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-548"
+  }, {
+    "name" : "thread",
+    "value" : "3962-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_logout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9e3b4acfbf3bdcf.json",
+  "parameterValues" : [ ]
+}

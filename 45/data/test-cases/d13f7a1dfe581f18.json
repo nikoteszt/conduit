@@ -1,0 +1,86 @@
+{
+  "uid" : "d13f7a1dfe581f18",
+  "name" : "test_tc08_edit_post",
+  "fullName" : "testproject.test_post.TestPostSuite#test_tc08_edit_post",
+  "historyId" : "ae585e2970fc1f3afc5af42f3c7d5f2b",
+  "time" : {
+    "start" : 1629070905183,
+    "stop" : 1629070918764,
+    "duration" : 13581
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite",
+    "time" : {
+      "start" : 1629070901435,
+      "stop" : 1629070905181,
+      "duration" : 3746
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite::0",
+    "time" : {
+      "start" : 1629070918765,
+      "stop" : 1629070920947,
+      "duration" : 2182
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_post"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPostSuite"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-548"
+  }, {
+    "name" : "thread",
+    "value" : "3962-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_post"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d13f7a1dfe581f18.json",
+  "parameterValues" : [ ]
+}
