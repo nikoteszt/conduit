@@ -1,0 +1,101 @@
+[ {
+  "uid" : "8c823b7749ed214f",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1629037943558,
+    "stop" : 1629037946757,
+    "duration" : 3199
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cea3d5ea70b5484",
+  "name" : "test_save_data",
+  "time" : {
+    "start" : 1629038026698,
+    "stop" : 1629038029210,
+    "duration" : 2512
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae5c6a471e6c4d7d",
+  "name" : "test_del_post",
+  "time" : {
+    "start" : 1629038006339,
+    "stop" : 1629038012484,
+    "duration" : 6145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "51d0fd6c0a6b81a7",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1629037930996,
+    "stop" : 1629037935693,
+    "duration" : 4697
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f89969fae350cdd",
+  "name" : "test_listing_data",
+  "time" : {
+    "start" : 1629037927358,
+    "stop" : 1629037927507,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aea926f4d0706db",
+  "name" : "test_new_post",
+  "time" : {
+    "start" : 1629037967887,
+    "stop" : 1629037980699,
+    "duration" : 12812
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "93db4caa1c606825",
+  "name" : "test_registration",
+  "time" : {
+    "start" : 1629038015824,
+    "stop" : 1629038018733,
+    "duration" : 2909
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c90120d433570cad",
+  "name" : "test_cookies_accept",
+  "time" : {
+    "start" : 1629037906447,
+    "stop" : 1629037919459,
+    "duration" : 13012
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d355dfb509819859",
+  "name" : "test_edit_post",
+  "time" : {
+    "start" : 1629037986770,
+    "stop" : 1629038000366,
+    "duration" : 13596
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d610e06b470cf3c5",
+  "name" : "test_multiple_pages",
+  "time" : {
+    "start" : 1629037954690,
+    "stop" : 1629037961917,
+    "duration" : 7227
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
