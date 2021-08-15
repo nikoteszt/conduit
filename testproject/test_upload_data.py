@@ -30,7 +30,7 @@ class TestUploadData(object):
     def test_upload_data(self):
         g_feed = self.driver.find_elements_by_class_name("article-preview")
         feed_upload = 0
-        with open('upload_data.csv', encoding="utf-8") as ud_file:
+        with open('testproject/upload_data.csv', encoding="utf-8") as ud_file:
             csv_reader = csv.reader(ud_file, delimiter=',')
             next(csv_reader)
             for row in csv_reader:
