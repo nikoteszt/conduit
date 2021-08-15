@@ -15,7 +15,7 @@ class TestCookies(object):
     def teardown_method(self):
         self.driver.quit()
 
-    def test_cookies_accept(self):
+    def test_tc04_cookies_accept(self):
         def login():
             self.driver.find_element_by_link_text("Sign in").click()
             self.driver.find_element_by_xpath('//input[@type="text"]').send_keys("ntest2@ceg.hu")
