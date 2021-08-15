@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
 chrome_options.headless = True
+# TC10
 
 
 class TestSaveData(object):
@@ -23,7 +24,7 @@ class TestSaveData(object):
         self.driver.close()
         self.driver.quit()
 
-    def test_save_data(self):
+    def test_tc10_save_data(self):
         self.driver.find_element_by_xpath('(//li/a[@class="nav-link"])[3]').click()
         time.sleep(2)
         # articles = self.driver.find_elements_by_xpath('//div[@class="article-preview"]')
