@@ -1,0 +1,111 @@
+[ {
+  "uid" : "98baddce0ca5e85",
+  "name" : "test_tc06_multiple_pages",
+  "time" : {
+    "start" : 1629071543228,
+    "stop" : 1629071550386,
+    "duration" : 7158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "899b7d3507bf3508",
+  "name" : "test_tc03_logout",
+  "time" : {
+    "start" : 1629071532342,
+    "stop" : 1629071535487,
+    "duration" : 3145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e62ff3f41d2528be",
+  "name" : "test_tc09_del_post",
+  "time" : {
+    "start" : 1629071593770,
+    "stop" : 1629071599886,
+    "duration" : 6116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd8821a63e34df28",
+  "name" : "test_tc05_listing_data",
+  "time" : {
+    "start" : 1629071516645,
+    "stop" : 1629071516749,
+    "duration" : 104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "366eb0fc7d66c4b2",
+  "name" : "test_tc07_new_post",
+  "time" : {
+    "start" : 1629071556161,
+    "stop" : 1629071568753,
+    "duration" : 12592
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c5bbfb90e90a2cf",
+  "name" : "test_tc11_upload_data",
+  "time" : {
+    "start" : 1629071625661,
+    "stop" : 1629071652128,
+    "duration" : 26467
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "31bef031dfa1eaaa",
+  "name" : "test_tc08_edit_post",
+  "time" : {
+    "start" : 1629071574558,
+    "stop" : 1629071588028,
+    "duration" : 13470
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "428987704fd3cb1f",
+  "name" : "test_tc10_save_data",
+  "time" : {
+    "start" : 1629071613478,
+    "stop" : 1629071615834,
+    "duration" : 2356
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d6fe98fbfc21153",
+  "name" : "test_tc04_cookies_accept",
+  "time" : {
+    "start" : 1629071496215,
+    "stop" : 1629071508937,
+    "duration" : 12722
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53fc0b4ad0c24a44",
+  "name" : "test_tc01_registration",
+  "time" : {
+    "start" : 1629071603160,
+    "stop" : 1629071605772,
+    "duration" : 2612
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a627b0cc51a6bbc",
+  "name" : "test_tc02_login",
+  "time" : {
+    "start" : 1629071520170,
+    "stop" : 1629071524697,
+    "duration" : 4527
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

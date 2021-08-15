@@ -1,0 +1,122 @@
+{
+  "uid" : "98baddce0ca5e85",
+  "name" : "test_tc06_multiple_pages",
+  "fullName" : "testproject.test_multiple_pages.TestMultiplePages#test_tc06_multiple_pages",
+  "historyId" : "e5d4ff581f1c73cc5b69cd485ea61372",
+  "time" : {
+    "start" : 1629071543228,
+    "stop" : 1629071550386,
+    "duration" : 7158
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestMultiplePages",
+    "time" : {
+      "start" : 1629071535550,
+      "stop" : 1629071543227,
+      "duration" : 7677
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "801330319b030555",
+      "name" : "stdout",
+      "source" : "801330319b030555.txt",
+      "type" : "text/plain",
+      "size" : 87
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestMultiplePages::0",
+    "time" : {
+      "start" : 1629071550387,
+      "stop" : 1629071552567,
+      "duration" : 2180
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_multiple_pages"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMultiplePages"
+  }, {
+    "name" : "host",
+    "value" : "fv-az47-628"
+  }, {
+    "name" : "thread",
+    "value" : "3805-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_multiple_pages"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "aaa4b40a61130308",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/45//#testresult/aaa4b40a61130308",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629070873222,
+          "stop" : 1629070880448,
+          "duration" : 7226
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "98baddce0ca5e85.json",
+  "parameterValues" : [ ]
+}

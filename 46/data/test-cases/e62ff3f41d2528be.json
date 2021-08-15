@@ -1,0 +1,106 @@
+{
+  "uid" : "e62ff3f41d2528be",
+  "name" : "test_tc09_del_post",
+  "fullName" : "testproject.test_post.TestPostSuite#test_tc09_del_post",
+  "historyId" : "0abf2903534fe776de280c353c5d096c",
+  "time" : {
+    "start" : 1629071593770,
+    "stop" : 1629071599886,
+    "duration" : 6116
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite",
+    "time" : {
+      "start" : 1629071590185,
+      "stop" : 1629071593769,
+      "duration" : 3584
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite::0",
+    "time" : {
+      "start" : 1629071599886,
+      "stop" : 1629071602031,
+      "duration" : 2145
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_post"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPostSuite"
+  }, {
+    "name" : "host",
+    "value" : "fv-az47-628"
+  }, {
+    "name" : "thread",
+    "value" : "3805-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_post"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "4a467fbdd7c61c5f",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/45//#testresult/4a467fbdd7c61c5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629070924715,
+          "stop" : 1629070930877,
+          "duration" : 6162
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e62ff3f41d2528be.json",
+  "parameterValues" : [ ]
+}
