@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
 chrome_options.headless = True
+# TC11
 
 
 class TestUploadData(object):
@@ -27,7 +28,7 @@ class TestUploadData(object):
         self.driver.close()
         self.driver.quit()
 
-    def test_upload_data(self):
+    def test_tc11_upload_data(self):
         # Elmentjük a meglévő feedek számát
         g_feed = len(self.driver.find_elements_by_class_name("article-preview"))
 
