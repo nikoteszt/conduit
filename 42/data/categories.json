@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'upload_data.csv'",
+      "children" : [ {
+        "name" : "test_upload_data",
+        "uid" : "ac869156051426e9",
+        "parentUid" : "c6f90c4cffd298eb03afccd7089a7040",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629047159143,
+          "stop" : 1629047159154,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c6f90c4cffd298eb03afccd7089a7040"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
