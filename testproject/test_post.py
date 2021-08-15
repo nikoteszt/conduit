@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 chrome_options = Options()
 chrome_options.headless = True
+# TC07, TC08, TC09
 
 
 class TestPostSuite(object):
@@ -24,7 +25,7 @@ class TestPostSuite(object):
         self.driver.close()
         self.driver.quit()
 
-    def test_new_post(self):
+    def test_tc07_new_post(self):
         time.sleep(2)
         self.driver.find_element(By.XPATH, "//a[contains(text(),\'New Article\')]").click()
         time.sleep(2)
@@ -43,7 +44,7 @@ class TestPostSuite(object):
         assert len(my_post) > 0
         time.sleep(2)
 
-    def test_edit_post(self):
+    def test_tc08_edit_post(self):
         new_tag = "update"
         time.sleep(2)
         posts = self.driver.find_elements_by_class_name("preview-link")
@@ -69,7 +70,7 @@ class TestPostSuite(object):
         # assert posts_tag[-2].find_element_by_xpath('/a[1]').text == new_tag
         time.sleep(2)
 
-    def test_del_post(self):
+    def test_tc09_del_post(self):
         time.sleep(2)
         your_feed_num = len(self.driver.find_elements_by_class_name("author"))
         posts = self.driver.find_elements_by_xpath('//div[@class="tag-list"]')
