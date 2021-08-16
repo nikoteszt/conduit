@@ -6,7 +6,7 @@ chrome_options.add_argument("--headless")
 # TC02
 
 
-class TestDefaultSuite(object):
+class TestLogin(object):
     def setup_method(self):
         self.driver = webdriver.Chrome(options=chrome_options)
 
