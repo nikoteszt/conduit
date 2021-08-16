@@ -1,0 +1,133 @@
+{
+  "uid" : "ec2be87058a970c6",
+  "name" : "test_tc07_new_post",
+  "fullName" : "testproject.test_post.TestPostSuite#test_tc07_new_post",
+  "historyId" : "4e44a7836d3af61bfe72b9de112d113b",
+  "time" : {
+    "start" : 1629123988257,
+    "stop" : 1629124000937,
+    "duration" : 12680
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite",
+    "time" : {
+      "start" : 1629123984549,
+      "stop" : 1629123988256,
+      "duration" : 3707
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_method_fixture_TestPostSuite::0",
+    "time" : {
+      "start" : 1629124000938,
+      "stop" : 1629124003182,
+      "duration" : 2244
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_post"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPostSuite"
+  }, {
+    "name" : "host",
+    "value" : "fv-az72-270"
+  }, {
+    "name" : "thread",
+    "value" : "3838-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_post"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "581998960a8126b0",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/48//#testresult/581998960a8126b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629123055781,
+          "stop" : 1629123068375,
+          "duration" : 12594
+        }
+      }, {
+        "uid" : "5d9f5ac96b059545",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/47//#testresult/5d9f5ac96b059545",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629121100299,
+          "stop" : 1629121113052,
+          "duration" : 12753
+        }
+      }, {
+        "uid" : "366eb0fc7d66c4b2",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/46//#testresult/366eb0fc7d66c4b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629071556161,
+          "stop" : 1629071568753,
+          "duration" : 12592
+        }
+      }, {
+        "uid" : "c4d8e05ab63f5640",
+        "reportUrl" : "https://nikoteszt.github.io/conduit/45//#testresult/c4d8e05ab63f5640",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629070886392,
+          "stop" : 1629070899172,
+          "duration" : 12780
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ec2be87058a970c6.json",
+  "parameterValues" : [ ]
+}
